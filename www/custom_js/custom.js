@@ -31,8 +31,8 @@ var datetimecounter = '';
                  inviatedate +=appdata.inviatedate;
                  
             });
-                var groomImgs="http://localhost/harish/wedding/uploads/groomimg/"+groomImg;
-                var brideImgs="http://localhost/harish/wedding/uploads/groomimg/"+brideImg;
+                var groomImgs="http://www.myweddingicon.com/uploads/groomimg/"+groomImg;
+                var brideImgs="http://www.myweddingicon.com/uploads/groomimg/"+brideImg;
                  $("#groomajax").html(groomName);  
                  $("#brideajax").html(brideName);
                  $("#gajax").html(gname);
