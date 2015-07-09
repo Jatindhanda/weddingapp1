@@ -555,7 +555,7 @@ color: #000000;
 
 
 .services {
- background: url("../img/evnt-bg.png") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+ background: url(../img/evnt-bg.png) no-repeat scroll center top / cover rgba(0, 0, 0, 0);
    height: auto;
     margin-top: 25px;
     padding-bottom: 50px;
@@ -1350,7 +1350,7 @@ font-size: 26px;
 /******************************************************************************************/
 
 .wishes {
-  background: url("../img/wish-bg.png") no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+  background: url(../img/wish-bg.png) no-repeat scroll center top / cover rgba(0, 0, 0, 0);
     height: auto;
     margin-top: 80px;
     padding-bottom: 50px;
