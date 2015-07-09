@@ -1,0 +1,161 @@
+/**************************************Horizontal scroll-bar *****************************/
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+	  display: table;
+}
+.nbs-flexisel-container {
+    max-width: 100%;
+    position: relative;
+}
+.nbs-flexisel-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 9999px;
+}
+.nbs-flexisel-inner {
+/*    background: -moz-linear-gradient(center top , #fcfcfc 0%, #eeeeee 100%) repeat scroll 0 0 #fcfcfc;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    float: left;*/
+    overflow: hidden;
+    width: 100%;
+}
+.nbs-flexisel-item {
+    cursor: pointer;
+    float: left;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+	/*width:25%;*/
+
+}
+.nbs-flexisel-item img {
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 148px;
+    position: relative;
+    width: 100%;
+}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+    cursor: pointer;
+    height: 22px;
+    opacity: 0.5;
+    position: absolute;
+    width: 22px;
+    z-index: 100;
+}
+.nbs-flexisel-nav-left {
+    background: url("../img/button-previous.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    left: 10px;
+}
+.nbs-flexisel-nav-right {
+    background: url("../img/button-next.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    right: 5px;
+}
+
+
+/**********************************************Blog *******************************/
+.nbs-flexisel-item .blog {
+    width: 100%;
+}
+.nbs-flexisel-item .blog h1 {
+    color: #000000;
+    font-family: "Great Vibes";
+    font-size: 80px;
+    padding: 40px 0 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.nbs-flexisel-item .blog p {
+    color: #000000;
+    font-family: lora;
+    font-size: 18px;
+    font-style: italic;
+}
+.nbs-flexisel-item .blog h3 {
+    color: #000000;
+    font-family: "Great Vibes";
+    font-size: 40px;
+    padding: 0;
+}
+
+
+.nbs-flexisel-item .blog-container {
+    padding-top: 20px;
+}
+.nbs-flexisel-item .blog-container p {
+	 
+ color: #000000;
+    font-family: lora;
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px 0 0;
+
+}
+.nbs-flexisel-item .blog-container .blog-img {
+    padding-top: 30px;
+}
+.nbs-flexisel-item .blog-container .blog-img img {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    width: 80%;
+}
+.nbs-flexisel-container .blog h3 {
+    color: #000000;
+    font-family: "Great Vibes";
+    font-size: 40px;
+    padding: 0;
+}
+
+.nbs-flexisel-item .icon-par-prt {
+    display: block;
+    width: 100%;
+}
+
+.nbs-flexisel-item .icon-par-prt img{
+	max-width:16px;
+	height:16px;
+	width:100%;
+}
+
+
+.nbs-flexisel-item .icon-par-prt p{
+    color: #000000;
+    font-family: lora;
+    font-size: 16px;
+    font-style: italic;
+    width: 100%;
+}
+
+.nbs-flexisel-item .col-lg-3 {
+    width:25% !important;
+}
+
+.nbs-flexisel-item .img-responsive {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+}
+
+.nbs-flexisel-item .col-lg-10 {
+ margin: auto auto auto 8%;
+    padding: 10px 0 0;
+    width: 83% !important;
+}
+
+.nbs-flexisel-item .col-lg-8 {
+width:66% !important;
+}
+
+.nbs-flexisel-item .text-center {
+    text-align: center !important;
+}
+
+

@@ -1,0 +1,214 @@
+.input_text_w {
+    background: none repeat scroll 0 0 rgba(251, 251, 251, 0.2);
+    color: #000000;
+}
+.textarea_text_w {
+    color: #000000;
+}
+.contact_address_cont {
+    background: none repeat scroll 0 0 #ffffff;
+}
+.contact_address, .contact_address a, .contact_address i, .contact_address_cont p {
+    color: #333333;
+}
+.contact_content {
+    background: url("../img/parallax01.jpg") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+}
+.contact_content_parallax {
+    background: none repeat scroll 0 0 #fbfbfb;
+}
+.contact_content_parallax h3 {
+    color: #333333;
+}
+#contact-form {
+/*    background: none repeat scroll 0 0 rgba(251, 251, 251, 0.9);
+*/    margin-bottom: 20px;
+margin-top: 45px;
+}
+.input_text {
+    background-color: #f1f1f1;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #cccccc inset;
+    color: #333333;
+}
+.input_text_w {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+.textarea_text {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #cccccc inset;
+    color: #333333;
+}
+.textarea_text_w {
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.input_text:-moz-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.input_text::-moz-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.input_text:focus:-moz-placeholder {
+    color: #333333;
+    opacity: 0;
+}
+.input_text:focus::-moz-placeholder {
+    color: #333333;
+    opacity: 0;
+}
+.textarea_text:-moz-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.textarea_text::-moz-placeholder {
+    color: #333333;
+    opacity: 1;
+}
+.textarea_text:focus:-moz-placeholder {
+    color: #333333;
+    opacity: 0;
+}
+.textarea_text:focus::-moz-placeholder {
+    color: #333333;
+    opacity: 0;
+}
+.input_text_w:-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+.input_text_w::-moz-placeholder {
+    color: #000000;
+    opacity: 1;
+}
+.input_text_w:focus:-moz-placeholder {
+    color: #000000;
+    opacity: 0;
+}
+.input_text_w:focus::-moz-placeholder {
+    color: #000000;
+    opacity: 0;
+}
+.input_button {
+ border-radius: 5px;
+    color: #333333;
+    font-family: Lora;
+    font-size: 18px;
+    font-style: italic;
+    height: 53px;
+    margin: 20px 0 0;
+    max-width: 369px;
+    padding: 0;
+    position: relative;
+    text-transform: capitalize;
+    width: 100%;
+}
+.input_button:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    color: #cccccc;
+}
+.input_button_w {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+.input_button_w:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+.contact_message {
+    color: #ff0000;
+}
+#contact-form .error, #rsvp-form .error {
+    border: 1px solid #ff0000;
+}
+#contact-error, #rsvp-error {
+    color: #ff0000;
+}
+#contact-failed, #contact-loading, #contact-success {
+    background-color: rgba(251, 251, 251, 0.3);
+    color: #ff0000;
+}
+footer {
+ background: none repeat scroll 0 0 #383636;
+    color: #eaeaea;
+    opacity: 1;
+}
+.footer_icons a {
+    background: none repeat scroll 0 0 #333333;
+    color: #101010;
+}
+.footer_icons a:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+footer p {
+    color: #666666;
+}
+/***************************************banner part **********************************/
+
+.logo_top, .logo_top a, .logo_top a:hover {
+    color: #000000;
+}
+
+.marriage_banner {
+    background: url("../img/arrow1.png") repeat-x scroll center bottom rgba(0, 0, 0, 0);
+}
+
+.marriage_banner h1, .marriage_banner h3, .marriage_banner p {
+    color: #000000;
+}
+
+.banner_timer ul li {
+    background: none repeat scroll 0 0 rgba(244, 68, 130, 0.8);
+    color: #ffffff;
+}
+
+.banner_timer ul li, .banner_timer ul li span {
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*********************************Menu part ***************************************/
+
+#menu-toggle {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+#menu-toggle:hover {
+    color: #ffffff;
+}
+#menu-close {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+#sidebar-wrapper.active {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.9);
+    border-left: 1px solid #333333;
+}
+
+.sidebar-nav li {
+    border-color: rgba(251, 251, 251, 0.1);
+}
+.sidebar-nav li a {
+    color: #999999;
+}
+.sidebar-nav li a:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+}
+
+
+/*********************************************Social icon part ******************************/
+
+.social li a {
+    background: none repeat scroll 0 0 #333333;
+    color: #ffffff;
+}
+.social li a:hover {
+    background: none repeat scroll 0 0 #cccccc;
+    color: #333333;
+}
