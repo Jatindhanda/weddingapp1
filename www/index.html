@@ -228,9 +228,7 @@
        <li><a href="https://mail.google.com/" target="_blank"><i class="fa fa-envelope-o"></i></a></li></ul>
             </div><!-- /col-lg-4 --> 
             
-            
-             
-          
+        
       
  <div class="col-lg-2">
     <!--   <div class="fol-us-1">-->       
@@ -427,7 +425,6 @@
   	<!-- horizontal scroll-bar js -->
   
    <script type="text/javascript">
-
 $(window).load(function() {
     $("#flexiselDemo1").flexisel();
     $("#flexiselDemo2").flexisel({
@@ -476,39 +473,6 @@ $(window).load(function() {
     });
     
 });
- $("#contact-submit").click(function() {
-               // alert('hi');
-              // return false;
-    var name = $("#name").val();
-     if (name == "" ) {
-     $('#name_error').show();
-        return false;
-        }
-    var email = $("#email").val();
-      if (email == "" ) {
-     $('#email_error').show();
-        return false;
-        }
-      if(!validateEmail(email)){
-     $('#email_errorvalidate').show();
-      return false;
-     }
-    var message = $("#contact-msg").val();
-      if (message == "" ) {
-     $('#message_error').show();
-        return false;
-        }
-    });
-    function validateEmail(email){
-	var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-	var valid = emailReg.test(email);
-
-	if(!valid) {
-        return false;
-    } else {
-    	return true;
-    }
-}
 </script>   
 </body>
 </html>

@@ -4,8 +4,7 @@ $(document).ready(function() {
 //    var base_url = 'http://localhost/harish/wedding/index.php';
          var appid = 'd645920e395fedad7bbbed0eca3fe2e0';   
     var base_url = 'http://www.myweddingicon.com';
-//alert('hiiiiiiiii');
-//return false;
+
 var datetimecounter = '';
      $.ajax({
            url: base_url+'/dashboard/weddingapp/'+appid,
@@ -111,26 +110,56 @@ var datetimecounter = '';
                 $("#contactajax ul").html(strHtml);
                 }
             });
- 
-            
-       function fixIntegers(e){return 0>e&&(e=0),10>e?"0"+e:""+e}setInterval(function(){
-  
-  var e=new Date(datetimecounter),
-  t=new Date,r=Math.floor((e.getTime()-t.getTime())/1e3),n=fixIntegers(r%60);r=Math.floor(r/60);var a=fixIntegers(r%60);r=Math.floor(r/60);var o=fixIntegers(r%24);r=Math.floor(r/24);var f=r;$("#seconds").text(n),$("#minutes").text(a),$("#hours").text(o),$("#days").text(f)},1e3);
-
- var dataString = 'name=' + name + '&email=' + email + '&message=' + message + '&appid=' + appid;
-       $.ajax({  
-           url: base_url+'/dashboard/wishesSave/'+appid,
+  $("#contact-submit").click(function() {
+                
+   var name = $("#name").val();
+     if (name == "" ) {
+     $('#name_error').show();
+        return false;
+        }
+    var email = $("#email").val();
+     if (email == "" ) {
+     $('#email_error').show();
+        return false;
+      }
+      if(!validateEmail(email)){
+     $('#email_errorvalidate').show();
+      return false;
+     }
+  var message = $("#contact-msg").val();
+      if (message == "" ) {
+     $('#message_error').show();
+        return false;
+        }
+          var dataString = 'name=' + name + '&email=' + email + '&message=' + message + '&appid=' + appid;
+         $.ajax({  
+           url:base_url+'/dashboard/wishesSave/'+appid,
            type: "POST",
            data:dataString,
               'success' : function(data){ 
-                  
-               if (data == '1') { 
+               
+               if (data == '1') {
+                   
               $('#wishesDataSaved').text('wishes  saved successfully');
 		setTimeout(function(){$('#wishesDataSaved').text('')}, 3000);
               
             }  
               }
         });    
- 
+    function validateEmail(email){
+	var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+	var valid = emailReg.test(email);
+
+	if(!valid) {
+        return false;
+    } else {
+    	return true;
+    }
+}
+});
+           
+      function fixIntegers(e){return 0>e&&(e=0),10>e?"0"+e:""+e}setInterval(function(){
+  
+  var e=new Date(datetimecounter),
+  t=new Date,r=Math.floor((e.getTime()-t.getTime())/1e3),n=fixIntegers(r%60);r=Math.floor(r/60);var a=fixIntegers(r%60);r=Math.floor(r/60);var o=fixIntegers(r%24);r=Math.floor(r/24);var f=r;$("#seconds").text(n),$("#minutes").text(a),$("#hours").text(o),$("#days").text(f)},1e3);
    });
