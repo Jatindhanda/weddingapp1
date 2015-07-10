@@ -118,5 +118,19 @@ var datetimecounter = '';
   var e=new Date(datetimecounter),
   t=new Date,r=Math.floor((e.getTime()-t.getTime())/1e3),n=fixIntegers(r%60);r=Math.floor(r/60);var a=fixIntegers(r%60);r=Math.floor(r/60);var o=fixIntegers(r%24);r=Math.floor(r/24);var f=r;$("#seconds").text(n),$("#minutes").text(a),$("#hours").text(o),$("#days").text(f)},1e3);
 
-
+ var dataString = 'name=' + name + '&email=' + email + '&message=' + message + '&appid=' + appid;
+       $.ajax({  
+           url: base_url+'/dashboard/wishesSave/'+appid,
+           type: "POST",
+           data:dataString,
+              'success' : function(data){ 
+                  
+               if (data == '1') { 
+              $('#wishesDataSaved').text('wishes  saved successfully');
+		setTimeout(function(){$('#wishesDataSaved').text('')}, 3000);
+              
+            }  
+              }
+        });    
+ 
    });
