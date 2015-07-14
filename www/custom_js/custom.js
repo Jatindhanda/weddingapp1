@@ -102,7 +102,7 @@ var datetimecounter = '';
                 var i=1;
                $.each(responseData, function(index,contactdata){
                  
-                        strHtml +='<li><div data-animation-delay="'+100*i+'" data-animation="flipInY" class=" animated flipInY visible"><div class="blog-img"> <img src="http://www.myweddingicon.com/uploads/contactimage/'+contactdata.contactimg+'" alt="" style="width: 148px; height: 148px;"></div> <h3>'+contactdata.name+'</h3><p>'+contactdata.event+'</p><div class="col-lg-10">  <div class="icon-par-prt"> <div class="col-lg-3 centered"><img alt=" " src="" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>'+contactdata.phone1+'</p></div><div class="col-lg-3 centered"><img alt="" src=""  width="16" height="16" class="img-responsive"> </div><div class="col-lg-8">	<p>'+contactdata.email+'</p></div> </div> </div> </div></li>';
+                        strHtml +='<li><div data-animation-delay="'+100*i+'" data-animation="flipInY" class=" animated flipInY visible"><div class="blog-img"> <img src="http://www.myweddingicon.com/uploads/contactimage/'+contactdata.contactimg+'" alt="" style="width: 148px; height: 148px;"></div> <h3>'+contactdata.name+'</h3><p>'+contactdata.relation+'</p><div class="col-lg-10">  <div class="icon-par-prt"> <div class="col-lg-3 centered"><img alt=" " src="" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>'+contactdata.phone1+'</p></div><div class="col-lg-3 centered"><img alt="" src=""  width="16" height="16" class="img-responsive"> </div><div class="col-lg-8">	<p>'+contactdata.email+'</p></div> </div> </div> </div></li>';
  i++
             
               });
