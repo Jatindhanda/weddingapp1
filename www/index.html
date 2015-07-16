@@ -73,7 +73,7 @@
             <a href="#photo_gallery">our gallery</a>
 			<a href="#our-blog">Our Contacts</a>
 			<a href="#rsvp">wishes</a>
-		<a href="#" onclick="exitFromApp()"  id="exit">2Exit</a>
+		<a href="#" onclick="exitFromApp()"  id="exit1">Exit</a>
 		</div>
 		
 		<!-- Menu button -->
@@ -471,7 +471,22 @@ $(window).load(function() {
     });
     
 });
-</script> 
+</script>
+<script>
+document.addEventListener("backbutton", function(e){
+    if($.mobile.activePage.is('#homepage')){
+        /* 
+         Event preventDefault/stopPropagation not required as adding backbutton
+          listener itself override the default behaviour. Refer below PhoneGap link.
+        */
+        //e.preventDefault();
+        navigator.app.exitApp();
+    }
+    else {
+        navigator.app.backHistory()
+    }
+}, false);
+</script>
 <script>
     $(document).ready(function() {
         
