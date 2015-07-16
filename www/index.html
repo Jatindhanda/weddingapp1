@@ -73,7 +73,7 @@
             <a href="#photo_gallery">our gallery</a>
 			<a href="#our-blog">Our Contacts</a>
 			<a href="#rsvp">wishes</a>
-		<a href="#"  id="exit">Exit</a>
+		<a href="#" onclick="exitFromApp()"  id="exit">2Exit</a>
 		</div>
 		
 		<!-- Menu button -->
@@ -490,6 +490,11 @@ var confirm_box = confirm("do you want to exit");
     
     });
     </script>
-    
+  <script>
+     function exitFromApp()
+             {
+                               navigator.app.exitApp();
+             }
+</script>  
 </body>
 </html>
