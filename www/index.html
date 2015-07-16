@@ -73,7 +73,7 @@
             <a href="#photo_gallery">our gallery</a>
 			<a href="#our-blog">Our Contacts</a>
 			<a href="#rsvp">wishes</a>
-		
+		<a href="#"  id="exit">Exit</a>
 		</div>
 		
 		<!-- Menu button -->
@@ -471,6 +471,41 @@ $(window).load(function() {
     });
     
 });
-</script>   
+</script> 
+<script>
+    $(document).ready(function() {
+        
+         
+        $("nav a#exit").click( function() {
+var confirm_box = confirm("do you want to exit");
+
+    if (confirm_box == true) {
+      navigator.app.exitApp()
+     // navigator.device.exitApp(); 
+     //parent.history.back();
+    } else {
+        return false;
+    }
+});
+    
+    });
+    </script>
+    <script>
+        public void onBackPressed()
+{
+    if(backButtonCount >= 1)
+    {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+    else
+    {
+        Toast.makeText(this, "Press the back button once again to close the application.", Toast.LENGTH_SHORT).show();
+        backButtonCount++;
+    }
+}
+    </script>
 </body>
 </html>
