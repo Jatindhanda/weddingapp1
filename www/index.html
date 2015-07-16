@@ -505,11 +505,33 @@ var confirm_box = confirm("do you want to exit");
     
     });
     </script>
-  <script>
-     function exitFromApp()
-             {
-                               navigator.app.exitApp();
-             }
+  <script> 
+jQuery(window).resize(function() { 
+cr_sizeCanvas(jQuery(window).width(), jQuery(window).height()); 
+}); 
+
+document.addEventListener("deviceready", function () 
+{	
+alert('Device ready'); 
+// Create new runtime using the c2canvas 
+cr_createRuntime("c2canvas"); 
+
+document.addEventListener("pause", function() { 
+cr_setSuspended(true); 
+}, false); 
+
+document.addEventListener("resume", function() { 
+cr_setSuspended(false); 
+}, false); 
+
+document.addEventListener("backbutton", onBackKeyDown, false); 
+
+}, false); 
+
+function onBackKeyDown(){ 
+navigator.app.exitApp(); 
+} 
+
 </script>  
 </body>
 </html>
