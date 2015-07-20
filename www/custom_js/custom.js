@@ -48,6 +48,64 @@ var datetimecounter = '';
          
        });
        
+         $.ajax({
+             
+                   url:  base_url+'/dashboard/getFbUrl/'+appid,
+                type: "POST",
+                data: "",
+                dataType:'json',
+                success: function(responseSocialData) {
+             // alert();
+                 var strHtmls='';
+                 var iconname='';
+                 $.each(responseSocialData, function(index,socialdata){
+//                     alert( socialdata.url);
+//                     return false;
+                 if(socialdata.social_icon=='facebook'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-facebook"></i></a></li>'; 
+                 }
+                 if(socialdata.social_icon=='twitter'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-twitter"></i></a></li>'; 
+                 }  
+                    if(socialdata.social_icon=='google'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-google-plus"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='youtube'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-twitter"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='linkedIn'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-linkedin"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='whatapp'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-whatsapp"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='instagram'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-instagram"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='pinterest'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-pinterest"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='skype'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-skype"></i></a></li>'; 
+                 }
+                    if(socialdata.social_icon=='vine'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-vine"></i></a></li>'; 
+                 }
+                       if(socialdata.social_icon=='snapchat'){
+                 iconname='<li><a href='+ socialdata.url + '  target="_blank"><i class="fa fa-twitter"></i></a></li>'; 
+                 }
+               
+          
+                 
+        strHtmls += ''+ iconname +'';
+    //  alert(strHtml);    
+      });
+                 
+                  $("#socailicon ul").html(strHtmls);
+                }
+            }); 
+
+       
        $.ajax({
                 url:  base_url+'/dashboard/weddingEventGet/'+appid,
                 type: "GET",
