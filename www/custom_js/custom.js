@@ -118,10 +118,10 @@ var datetimecounter = '';
                  $.each(responseData, function(index,eventdata){
                      
               if(i%2==0){
-              strHtml +='<div class="col-lg-1 centered"><img alt="" src="" class="img-responsive"></div><div class="col-lg-4"> <p style="font-weight:bold;">'+eventdata.name+'</p><p>'+eventdata.date+'&nbsp;&nbsp&nbsp&nbsp;'+eventdata.time+'</p> <p>Venue:'+eventdata.street+'&nbsp;&nbsp&nbsp&nbsp'+eventdata.city+'</p></div>';
+              strHtml +='<div class="col-lg-1 centered"><img alt="" src="img/flwr.png" class="img-responsive"></div><div class="col-lg-4"> <p style="font-weight:bold;">'+eventdata.name+'</p><p>'+eventdata.date+'&nbsp;&nbsp&nbsp&nbsp;'+eventdata.time+'</p> <p>Venue:'+eventdata.street+'&nbsp;&nbsp&nbsp&nbsp'+eventdata.city+'</p></div>';
             
               }else{
-             strHtml +='<div class="col-lg-1 centered"><img alt="" src="" class="img-responsive"></div> <div class="col-lg-6"><p style="font-weight:bold;">'+eventdata.name+'</p><p>'+eventdata.date+'&nbsp;&nbsp&nbsp&nbsp'+eventdata.time+'</p><p>Venue :  '+eventdata.street+'&nbsp;&nbsp&nbsp&nbsp'+eventdata.city+'</p></div>';
+             strHtml +='<div class="col-lg-1 centered"><img alt="" src="img/flwr.png" class="img-responsive"></div> <div class="col-lg-6"><p style="font-weight:bold;">'+eventdata.name+'</p><p>'+eventdata.date+'&nbsp;&nbsp&nbsp&nbsp'+eventdata.time+'</p><p>Venue :  '+eventdata.street+'&nbsp;&nbsp&nbsp&nbsp'+eventdata.city+'</p></div>';
             // alert (eventRightConatiner);		
                    
 			
@@ -143,7 +143,7 @@ var datetimecounter = '';
                  // alert();
                  var strHtml='';
                  $.each(responseData, function(index,data){
-          strHtml += '<li><a href="http://www.myweddingicon.com/uploads/'+data.galleries+'"); "> <img src="http://www.myweddingicon.com/uploads/'+data.galleries+'"); " alt=""></a></li>';
+          strHtml += '<li><a href="'+base_url+'/uploads/'+data.galleries+'"> <img src="'+base_url+'/uploads/'+data.galleries+'" alt=""></a></li>';
              });
                  
                   $("#photo_gallery ul").html(strHtml);
@@ -158,15 +158,127 @@ var datetimecounter = '';
                 success: function(responseData) {
                 var strHtml='';
                 var i=1;
-               $.each(responseData, function(index,contactdata){
-                 
-                        strHtml +='<li><div data-animation-delay="'+100*i+'" data-animation="flipInY" class=" animated flipInY visible"><div class="blog-img"> <img src="http://www.myweddingicon.com/uploads/contactimage/'+contactdata.contactimg+'" alt="" style="width: 148px; height: 148px;"></div> <h3>'+contactdata.name+'</h3><p>'+contactdata.relation+'</p><div class="col-lg-10">  <div class="icon-par-prt"> <div class="col-lg-3 centered"><img alt=" " src="" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>'+contactdata.phone1+'</p></div><div class="col-lg-3 centered"><img alt="" src=""  width="16" height="16" class="img-responsive"> </div><div class="col-lg-8">	<p>'+contactdata.email+'</p></div> </div> </div> </div></li>';
- i++
-            
-              });
-              
-                $("#contactajax ul").html(strHtml);
-                }
+              $.each(responseData, function (index, contactdata) {
+
+                strHtml += '<li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="" title="mate-1"  class="html5lightbox" data-group="amazingcarousel-1"><img src="'+base_url+'/uploads/contactimage/' + contactdata.contactimg + '" alt=""  /></a></div><div class="amazingcarousel-text"><cite> <h3>' + contactdata.name + '</h3></cite><p>' + contactdata.relation + '</p><div class="col-lg-10">   <div class="icon-par-prt"><div class="col-lg-3 centered"><img alt=" " src="img/mobile.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>' + contactdata.phone1 + '</p></div><div class="col-lg-3 centered"><img alt="" src="img/g-mil.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8">	<p>' + contactdata.email + '</p></div></div></div></div><div style="clear:both;"></div> </div></li>';
+                i++;
+            });
+            //alert(strHtml);
+            $("#contactajax ul").html(strHtml);
+            var scripts = document.getElementsByTagName("script");
+            var jsFolder = "";
+            for (var i = 0; i < scripts.length; i++)
+            {
+                if (scripts[i].src && scripts[i].src.match(/amazingcarousel\.js/i))
+                    jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
+            }
+            if (typeof html5Lightbox === "undefined")
+            {
+                html5Lightbox = jQuery(".html5lightbox").html5lightbox({
+                    skinsfoldername: "",
+                    jsfolder: jsFolder,
+                    barheight: 64,
+                    showtitle: true,
+                    showdescription: false,
+                    shownavigation: false,
+                    thumbwidth: 80,
+                    thumbheight: 60,
+                    thumbtopmargin: 12,
+                    thumbbottommargin: 8,
+                    titlebottomcss: '{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}',
+                    descriptionbottomcss: '{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}'
+                });
+            }
+            //Initializing amazing carousel --- Start
+            jQuery("#amazingcarousel-1").amazingcarousel({
+                jsfolder:jsFolder,
+                width: 280,
+                height: 240,
+                skinsfoldername: "",
+                interval: 3000,
+                itembottomshadowimagetop: 99,
+                donotcrop: false,
+                random: false,
+                showhoveroverlay: false,
+                height:240,
+                        arrowheight: 32,
+                showbottomshadow: false,
+                itembackgroundimagewidth: 100,
+                imageheight: 120,
+                skin: "TestimonialCarousel",
+                responsive: true,
+                lightboxtitlebottomcss: "{color:#333; font-size:14px; font-family:Armata,sans-serif,Arial; overflow:hidden; text-align:left;}",
+                enabletouchswipe: true,
+                navstyle: "bullets",
+                backgroundimagetop: -40,
+                arrowstyle: "mouseover",
+                bottomshadowimagetop: 95,
+                transitionduration: 1000,
+                itembackgroundimagetop: 0,
+                hoveroverlayimage: "hoveroverlay-64-64-9.png",
+                itembottomshadowimage: "itembottomshadow-100-98-3.png",
+                lightboxshowdescription: false,
+                width:280,
+                        navswitchonmouseover: false,
+                showhoveroverlayalways: false,
+                transitioneasing: "easeOutExpo",
+                lightboxshownavigation: false,
+                showitembackgroundimage: false,
+                itembackgroundimage: "",
+                playvideoimagepos: "center",
+                circular: true,
+                arrowimage: "arrows-32-32-2.png",
+                scrollitems: 1,
+                direction: "horizontal",
+                lightboxdescriptionbottomcss: "{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}",
+                supportiframe: false,
+                navimage: "bullet-16-16-1.png",
+                backgroundimagewidth: 110,
+                showbackgroundimage: false,
+                lightboxbarheight: 64,
+                showplayvideo: true,
+                spacing: 4,
+                lightboxthumbwidth: 80,
+                navdirection: "horizontal",
+                itembottomshadowimagewidth: 100,
+                backgroundimage: "",
+                lightboxthumbtopmargin: 12,
+                autoplay: false,
+                arrowwidth: 32,
+                transparent: false,
+                bottomshadowimage: "bottomshadow-110-95-0.png",
+                scrollmode: "page",
+                navmode: "page",
+                lightboxshowtitle: true,
+                lightboxthumbbottommargin: 8,
+                arrowhideonmouseleave: 600,
+                showitembottomshadow: false,
+                lightboxthumbheight: 60,
+                navspacing: 4,
+                pauseonmouseover: false,
+                imagefillcolor: "FFFFFF",
+                playvideoimage: "playvideo-64-64-0.png",
+                visibleitems: 4,
+                imagewidth: 120,
+                usescreenquery: false,
+                bottomshadowimagewidth: 110,
+                screenquery: {
+                    tablet: {
+                        screenwidth: 900,
+                        visibleitems: 2
+                    },
+                    mobile: {
+                        screenwidth: 600,
+                        visibleitems: 1
+                    }
+                },
+                navwidth: 16,
+                loop: 0,
+                navheight: 16
+            });
+            //Initializing amazing carousel----END 
+
+        }
             });
   $("#contact-submit").click(function() {
                 
