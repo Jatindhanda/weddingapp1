@@ -303,7 +303,7 @@ $(document).ready(function () {
         }
         var dataString = 'name=' + name + '&email=' + email + '&message=' + message + '&appid=' + appid;
         $.ajax({
-            url: base_url + '/dashboard/wishesSave/' + appid,
+            url: base_url + '/appsget/wishesSave/' + appid,
             type: "POST",
             data: dataString,
             'success': function (data) {
