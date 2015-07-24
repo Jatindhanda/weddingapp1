@@ -554,23 +554,45 @@ color: #000000;
 }
 
 
+
+.event_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:32px;
+}
+.event_footer
+{
+background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:32px;
+}
 .services {
- background: url(../img/evnt-bg.png) no-repeat scroll center top / cover rgba(0, 0, 0, 0);
-   height: auto;
-    margin-top: 25px;
-    padding-bottom: 50px;
-    padding-top: 35px;
-    width: 100%;
+/*background: url("../img/evnt-bg.png") repeat rgba(0, 0, 0, 0);*/
+background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9z…iMTAwJSIgc3R5bGU9ImZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsiLz4NCjwvc3ZnPg==');
+background-image: -moz-linear-gradient(top, #f06062, #f17298);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f06062), to(#f17298));
+background-image: -webkit-linear-gradient(top, #f06062, #f17298);
+background-image: -o-linear-gradient(top, #f06062, #f17298);
+background-image: linear-gradient(to bottom, #f06062, #f17298);
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1cbaed', endColorstr='#f06062');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1cbaed', endColorstr='#f06062')";
+background-repeat: repeat-x;
+height: auto;
+/*margin-top: 25px;*/
+padding-bottom: 50px;
+padding-top: 35px;
+width: 100%;
 }
 
 .services h1{
-  color: #000000;
-    font-family: "Great Vibes";
-		font-style:italic !important;
-    font-size: 80px;
-    padding: 40px 0 0;
-    text-align: center;
-    text-transform: capitalize;
+color: #000000;
+font-family: "Great Vibes";
+font-style:italic !important;
+font-size: 80px;
+padding: 0px 0 0;
+text-align: center;
+text-transform: capitalize;
 
 }
 
@@ -1350,7 +1372,16 @@ font-size: 26px;
 /******************************************************************************************/
 
 .wishes {
-  background: url(../img/wish-bg.png) no-repeat scroll center top / cover rgba(0, 0, 0, 0);
+/*  background: url(../img/wish-bg.png) repeat;*/
+background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9z…iMTAwJSIgc3R5bGU9ImZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsiLz4NCjwvc3ZnPg==');
+background-image: -moz-linear-gradient(top, #f06062, #f17298);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f06062), to(#f17298));
+background-image: -webkit-linear-gradient(top, #f06062, #f17298);
+background-image: -o-linear-gradient(top, #f06062, #f17298);
+background-image: linear-gradient(to bottom, #f06062, #f17298);
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1cbaed', endColorstr='#f06062');
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1cbaed', endColorstr='#f06062')";
+background-repeat: repeat-x;
     height: auto;
     margin-top: 80px;
     padding-bottom: 50px;
@@ -1796,7 +1827,26 @@ width: 180px;
     padding: 0;
     text-align: center;
 }
+ 
+.scroll {
+width: 100%;
+height: 430px;
+overflow: auto;
+margin-top: 0px;
+}
+.scroll::-webkit-scrollbar {
+width: 10px;
+}
 
+.scroll::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px #b83e62; 
+border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px #bc4147; 
+}
 
 .social {
  list-style: outside none none;
@@ -1823,7 +1873,3 @@ width: 180px;
     transform: rotateY(360deg);
     transition: all 0.4s ease-in-out 0s;
 }
-
-
-
-

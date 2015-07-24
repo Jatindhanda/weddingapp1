@@ -130,7 +130,7 @@ $(document).ready(function () {
             });
 
             $("#eventajax").html(strHtml);
-            
+            $('.scrollpanel').scrollpanel();
         }
     });
 

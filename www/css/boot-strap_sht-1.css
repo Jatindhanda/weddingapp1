@@ -7416,7 +7416,12 @@ and (max-width : 480px) {
 	
 	/*************************************My codings ***************************************/
 	
-	
+.scroll {
+  width: 100%;
+  height: 315px !important;
+  overflow: auto;
+  margin-top: 3em !important;
+}	
 .menu a {
     color: #808080;
     display: block;
