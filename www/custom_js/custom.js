@@ -117,10 +117,10 @@ $(document).ready(function () {
             $.each(responseData, function (index, eventdata) {
 
                 if (i % 2 == 0) {
-                    strHtml += '<div class="col-lg-1 centered"><img alt="" src="img/flwr.png" class="img-responsive"></div><div class="col-lg-4"> <p style="font-weight:bold;">' + eventdata.name + '</p><p>' + eventdata.date + '&nbsp;&nbsp&nbsp&nbsp;' + eventdata.time + '</p> <p>Venue:' + eventdata.street + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.city + '</p></div>';
+                    strHtml += '<div class="col-lg-1 centered"><img alt="" src="' + base_url + '/assets/img/flwr.png" class="img-responsive"></div><div class="col-lg-4"> <p style="font-weight:bold;">' + eventdata.name + '</p><p>' + eventdata.date + '&nbsp;&nbsp&nbsp&nbsp;' + eventdata.time + '</p> <p>Venue:' + eventdata.street + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.city + '</p></div>';
 
                 } else {
-                    strHtml += '<div class="col-lg-1 centered"><img alt="" src="img/flwr.png" class="img-responsive"></div> <div class="col-lg-6"><p style="font-weight:bold;">' + eventdata.name + '</p><p>' + eventdata.date + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.time + '</p><p>Venue :  ' + eventdata.street + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.city + '</p></div>';
+                    strHtml += '<div class="col-lg-1 centered"><img alt="" src="' + base_url + '/assets/img/flwr.png" class="img-responsive"></div> <div class="col-lg-6"><p style="font-weight:bold;">' + eventdata.name + '</p><p>' + eventdata.date + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.time + '</p><p>Venue :  ' + eventdata.street + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.city + '</p></div>';
                     // alert (eventRightConatiner);		
 
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
             var i = 1;
             $.each(responseData, function (index, contactdata) {
 
-                strHtml += '<li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="" title="mate-1"  class="html5lightbox" data-group="amazingcarousel-1"><img src="' + base_url + '/uploads/contactimage/' + contactdata.contactimg + '" alt=""  /></a></div><div class="amazingcarousel-text"><cite> <h3>' + contactdata.name + '</h3></cite><p>' + contactdata.relation + '</p><div class="col-lg-10">   <div class="icon-par-prt"><div class="col-lg-3 centered"><img alt=" " src="img/mobile.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>' + contactdata.phone1 + '</p></div><div class="col-lg-3 centered"><img alt="" src="img/g-mil.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8">	<p>' + contactdata.email + '</p></div></div></div></div><div style="clear:both;"></div> </div></li>';
+                strHtml += '<li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="" title="mate-1"  class="html5lightbox" data-group="amazingcarousel-1"><img src="' + base_url + '/uploads/contactimage/' + contactdata.contactimg + '" alt=""  /></a></div><div class="amazingcarousel-text"><cite> <h3>' + contactdata.name + '</h3></cite><p>' + contactdata.relation + '</p><div class="col-lg-10">   <div class="icon-par-prt"><div class="col-lg-3 centered"><img alt=" " src="' + base_url + '/assets/img/mobile.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>' + contactdata.phone1 + '</p></div><div class="col-lg-3 centered"><img alt="" src="' + base_url + '/assets/img/g-mil.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8">	<p>' + contactdata.email + '</p></div></div></div></div><div style="clear:both;"></div> </div></li>';
                 i++;
             });
             //alert(strHtml);

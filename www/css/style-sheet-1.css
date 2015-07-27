@@ -585,7 +585,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#1cbaed', endColorstr='#f06062')";
 background-repeat: repeat-x;
 height: auto;
-/*margin-top: 25px;*/
+margin-top: 0px !important;
 padding-bottom: 50px;
 padding-top: 35px;
 width: 100%;
@@ -1391,6 +1391,7 @@ background-repeat: repeat-x;
     height: auto;
     //margin-top: 80px;
     padding-bottom: 50px;
+    margin-top: 0px !important;
     padding-top: 35px;
     width: 100%;
 }
