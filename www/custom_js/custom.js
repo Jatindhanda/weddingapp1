@@ -281,7 +281,8 @@ $(document).ready(function () {
         }
     });
     $("#contact-submit").click(function () {
-
+         $('center#PleaseWait').show().find('img').attr('src',  base_url+'/assets/img/ajax-loader.gif');
+       
         var name = $("#name").val();
         if (name == "") {
             $('#name_error').show();
@@ -307,17 +308,18 @@ $(document).ready(function () {
             type: "POST",
             data: dataString,
             'success': function (data) {
+    
 
                 if (data == '1') {
-
+                    $('center#PleaseWait').hide(); 
                     $('#wishesDataSaved').text('wishes  saved successfully');
                     setTimeout(function () {
                         $('#wishesDataSaved').text('')
-                    }, 3000);
+                    }, 4000);
 
                 }
             }
-        });
+        }); 
         function validateEmail(email) {
             var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
             var valid = emailReg.test(email);

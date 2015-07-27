@@ -182,11 +182,15 @@
             <div class="container">
                 <div class="row">
                     <h1> Your wishes</h1>
-                    <label id="wishesDataSaved"></label>
+                    
+                    <center id="wishesDataSaved"></center>
+                    <center id="PleaseWait" style="display:none;"><img src="" alt="Please Wait.. " /></center>
+                
                     <div id="line">
                         <img alt="" src="assets/img/line.png"  class="img-responsive"></div>
                 </div><!-- line -->
                 <label id="wishesDataSaved"></label>
+              
                 <center>
                 <div data-animation-delay="700" data-animation="fadeInUp" id="contact-form" class="row animated fadeInUp visible">
                     <div class="col-md-6">
@@ -260,6 +264,20 @@
 
             });
         </script>
+        <script>
+    
 
+$('#contact-submit').submit(function() {
+    var pass = true;
+    //some validations
+
+    if(pass == false){
+        return false;
+    }
+    $("#overlay, #PleaseWait").show();
+
+    return true;
+});
+</script>
     </body>
 </html>
