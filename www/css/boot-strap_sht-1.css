@@ -821,8 +821,8 @@ pre code {
 }
 
 .row {
-/*  margin-right: -15px;
-  margin-left: -15px;*/
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .row:before,
@@ -7406,6 +7406,109 @@ td.visible-print {
   }
 
 }
+
+
+
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+	
+	/*************************************My codings ***************************************/
+.wishes_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:30px !important;
+margin-top: 80px;
+}
+.event_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:30px !important;
+}
+.event_footer
+{
+background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:28px !important;
+}		
+	
+.menu a {
+    color: #808080;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 40px !important;
+    margin-left: 20px;
+    text-transform: uppercase;
+}	
+	
+.isotom_lant li {
+	width:100% !important;
+}
+
+.blog-container {
+    overflow-x: hidden;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.nbs-flexisel-container .blog h3 {
+    color: #000000;
+    font-family: "Great Vibes";
+    font-size:37px;
+    padding: 0;
+}
+
+.nbs-flexisel-item .icon-par-prt p{
+	
+	  color: #000;
+    font-family: lora;
+    font-size:14px !important;
+    font-style: italic;
+	width:100%;
+/*	  margin: 0 0 0 35px !important;
+*/}
+
+.nbs-flexisel-item .icon-par-prt img {
+    height: 16px !important;
+    margin: 15px 0 0 107px !important;
+    max-width: 16px !important;
+    width: 100%;
+}
+
+.nbs-flexisel-item .text-center {
+    text-align: center !important;
+}
+
+
+}
+@media only screen and (max-width: 375px){
+    .wishes_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:30px !important;
+margin-top: 80px;
+}
+.event_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:30px !important;
+}
+.event_footer
+{
+background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:28px !important;
+}	
+}
+
+
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /*	
 .container {
@@ -7543,114 +7646,6 @@ display: block;
 }
 
 	 }
-
-
-
-@media only screen 
-and (min-width : 320px) 
-and (max-width : 480px) {
-	
-	/*************************************My codings ***************************************/
-.wishes_header
-{
-background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
-width:100%;
-height:30px !important;
-margin-top: 80px;
-}
-.event_header
-{
-background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
-width:100%;
-height:30px !important;
-}
-.event_footer
-{
-background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
-width:100%;
-height:28px !important;
-}	
-.scroll {
-  width: 100%;
-  height: 315px !important;
-  overflow: auto;
-  margin-top: 3em !important;
-}	
-.menu a {
-    color: #808080;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 40px !important;
-    margin-left: 20px;
-    text-transform: uppercase;
-}	
-	
-.isotom_lant li {
-	width:100% !important;
-}
-
-.blog-container {
-    overflow-x: hidden;
-    padding-top: 20px;
-    width: 100%;
-}
-
-.nbs-flexisel-container .blog h3 {
-    color: #000000;
-    font-family: "Great Vibes";
-    font-size:37px;
-    padding: 0;
-}
-
-.nbs-flexisel-item .icon-par-prt p{
-	
-	  color: #000;
-    font-family: lora;
-    font-size:14px !important;
-    font-style: italic;
-	width:100%;
-/*	  margin: 0 0 0 35px !important;
-*/}
-
-.nbs-flexisel-item .icon-par-prt img {
-    height: 16px !important;
-    margin: 15px 0 0 107px !important;
-    max-width: 16px !important;
-    width: 100%;
-}
-
-.nbs-flexisel-item .text-center {
-    text-align: center !important;
-}
-
-
-}
-
-@media only screen and (max-width: 375px){
-    .wishes_header
-{
-background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
-width:100%;
-height:30px !important;
-margin-top: 80px;
-}
-.event_header
-{
-background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
-width:100%;
-height:30px !important;
-}
-.event_footer
-{
-background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
-width:100%;
-height:28px !important;
-}	
-}
-
-
 
 
 

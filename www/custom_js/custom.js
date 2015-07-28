@@ -163,8 +163,7 @@ $(document).ready(function () {
                 strHtml += '<li class="amazingcarousel-item"><div class="amazingcarousel-item-container"><div class="amazingcarousel-image"><a href="" title="mate-1"  class="html5lightbox" data-group="amazingcarousel-1"><img src="' + base_url + '/uploads/contactimage/' + contactdata.contactimg + '" alt=""  /></a></div><div class="amazingcarousel-text"><cite> <h3>' + contactdata.name + '</h3></cite><p>' + contactdata.relation + '</p><div class="col-lg-10">   <div class="icon-par-prt"><div class="col-lg-3 centered"><img alt=" " src="' + base_url + '/assets/img/mobile.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8"><p>' + contactdata.phone1 + '</p></div><div class="col-lg-3 centered"><img alt="" src="' + base_url + '/assets/img/g-mil.png" width="16" height="16" class="img-responsive"></div><div class="col-lg-8">	<p>' + contactdata.email + '</p></div></div></div></div><div style="clear:both;"></div> </div></li>';
                 i++;
             });
-            //alert(strHtml);
-            $("#contactajax ul").html(strHtml);
+             $("#contactajax ul").html(strHtml);
             var scripts = document.getElementsByTagName("script");
             var jsFolder = base_url+"/js/carouselengine/";
 //            for (var i = 0; i < scripts.length; i++)
