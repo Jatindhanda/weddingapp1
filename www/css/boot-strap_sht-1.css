@@ -7415,9 +7415,7 @@ and (min-width : 320px)
 and (max-width : 480px) {
 	
 	/*************************************My codings ***************************************/
-div#contactajax {
-    width: 90% !important;
-}
+
 .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
