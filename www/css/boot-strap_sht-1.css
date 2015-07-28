@@ -821,8 +821,8 @@ pre code {
 }
 
 .row {
-  //margin-right: -15px;
-  //margin-left: -15px;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .row:before,
@@ -2000,17 +2000,17 @@ h1, .h1 {
 .banner_timer ul li {
     font-size: 12px !important;
     font-weight: 300 !important;
-    height: 70px!important;
+    height: 57px!important;
     margin: 0 3px!important;
     padding-top: 15px!important;
     text-align: center;
-    width: 70px!important;
+    width: 57px!important;
 }
 
 .banner_timer ul li span {
  display: block;
-    font-size: 34px !important;
-    line-height: 28px !important;
+    font-size: 30px !important;
+    line-height: 16px !important;
     margin: 0;
     padding: 0;
     text-align: center;
