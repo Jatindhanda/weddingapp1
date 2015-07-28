@@ -7418,10 +7418,10 @@ and (max-width : 480px) {
 div#contactajax {
     width: 98% !important;
 }
-/*.row {
+.row {
   margin-right: 0 !important;
   margin-left: 0 !important;
-}*/
+}
         .wishes_header
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
