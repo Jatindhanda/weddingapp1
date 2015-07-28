@@ -1840,7 +1840,7 @@ width: 180px;
 width: 100%;
 height: 430px;
 overflow: auto;
-margin-top: 0px;
+margin-top: 40px;
 }
 .scroll::-webkit-scrollbar {
 width: 10px;
