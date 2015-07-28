@@ -7415,7 +7415,14 @@ and (min-width : 320px)
 and (max-width : 480px) {
 	
 	/*************************************My codings ***************************************/
-.wishes_header
+div#contactajax {
+    width: 80% !important;
+}
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+        .wishes_header
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
