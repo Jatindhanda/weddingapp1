@@ -1904,3 +1904,11 @@ border-radius: 10px;
     transform: rotateY(360deg);
     transition: all 0.4s ease-in-out 0s;
 }
+.img_header
+{
+display: none;
+}
+.img_header1
+{
+    display: block;
+}

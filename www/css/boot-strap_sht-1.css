@@ -7746,8 +7746,22 @@ display: block;
 	 }
 
 
+@media only screen and (max-width: 320px){
+.img_header
+{
+display: block !important;
+}
 
-
+.event_header1 {
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width: 100%;
+height: 27px !important;
+}
+.img_header1
+{
+    display: none !important;
+}
+}
 @media only screen and (max-width: 240px){
 	
 .container {
