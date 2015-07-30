@@ -572,6 +572,7 @@ height:32px;
 background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
 width:100%;
 height:30px;
+margin-top: 0px;
 }
 .services {
 /*background: url("../img/evnt-bg.png") repeat rgba(0, 0, 0, 0);*/

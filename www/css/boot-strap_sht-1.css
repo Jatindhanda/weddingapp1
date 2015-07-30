@@ -7440,6 +7440,7 @@ height:30px !important;
 background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
 width:100%;
 height:28px !important;
+margin-top: -3px !important;
 }		
 	
 .menu a {
@@ -7686,7 +7687,28 @@ display: block;
   }
 	
 	/******************************* Bride & Groom img *******************/
+ .wishes_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:30px !important;
+margin-top: 80px;
+}
+.event_header
+{
+background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:30px !important;
+}
+.event_footer
+{
+background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
+width:100%;
+height:28px !important;
+margin-top: -5px !impotant;
+}	
 
+        
 .grm-pic{
   display: block;
     float: left;
