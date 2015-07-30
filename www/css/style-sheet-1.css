@@ -558,14 +558,14 @@ color: #000000;
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
-height:32px;
+height:30px;
 margin-top: 80px;
 }
 .event_header
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
-height:32px;
+height:30px;
 }
 .event_footer
 {
