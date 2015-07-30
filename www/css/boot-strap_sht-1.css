@@ -7426,14 +7426,14 @@ div#contactajax {
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
-height:30px !important;
+height:27px !important;
 margin-top: 80px;
 }
 .event_header
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
-height:30px !important;
+height:27px !important;
 }
 .event_footer
 {
@@ -7506,14 +7506,16 @@ margin-top: 80px;
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
-height:28px !important;
+height:27px !important;
 }
 .event_footer
 {
 background: url("../img/event_footer.png") repeat rgba(0, 0, 0, 0);
 width:100%;
 height:28px !important;
-}	
+}
+
+
 }
 
 @media only screen and (max-width: 375px){
@@ -7528,7 +7530,7 @@ margin-top: 80px;
 {
 background: url("../img/event_header.png") repeat rgba(0, 0, 0, 0);
 width:100%;
-height:28px !important;
+height:27px !important;
 }
 .event_footer
 {
