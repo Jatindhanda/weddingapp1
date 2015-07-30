@@ -309,7 +309,7 @@ $(document).ready(function () {
             'success': function (data) {
     
 
-                if (data == '1') {
+                if (data) {
                     $('center#PleaseWait').hide(); 
                     $('#wishesDataSaved').text('wishes  saved successfully');
                     setTimeout(function () {
