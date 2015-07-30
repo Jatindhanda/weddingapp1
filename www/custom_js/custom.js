@@ -308,7 +308,6 @@ $(document).ready(function () {
             data: dataString,
             'success': function (data) {
     
-
                 if (data) {
                     $('center#PleaseWait').hide(); 
                     $('#wishesDataSaved').text('wishes  saved successfully');
