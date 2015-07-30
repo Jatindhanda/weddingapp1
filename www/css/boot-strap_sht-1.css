@@ -7596,7 +7596,7 @@ background: -webkit-linear-gradient(#FFFFFF 0%, transparent 0%), -webkit-linear-
 background: -o-linear-gradient(#2B3A48 0%, transparent 0%), -o-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -o-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
 background: -moz-linear-gradient(#2B3A48 0%, transparent 0%), -moz-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -moz-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
 background-repeat: repeat-x;
-background-size: 0px 100%, 57px 26px, 57px 26px;
+background-size: 0px 100%, 57px 28px, 57px 28px;
 }
 .event_footer
 {
