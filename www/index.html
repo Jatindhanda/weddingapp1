@@ -188,16 +188,14 @@
             <div class="container">
                 <div class="row">
                     <h1> Your wishes</h1>
-                    
                     <center id="wishesDataSaved"></center>
                     <center id="PleaseWait" style="display:none;"><img src="" alt="Please Wait.. " /></center>
-                
                     <div id="line">
-                        <img alt="" src="assets/img/line.png"  class="img-responsive"></div>
-                </div><!-- line -->
+                        <img alt="" src="assets/img/line.png"  class="img-responsive">
+					</div>
+                </div>
                 <label id="wishesDataSaved"></label>
-              
-                <center>
+            <center>
                 <div data-animation-delay="700" data-animation="fadeInUp" id="contact-form" class="row animated fadeInUp visible">
                     <div class="col-md-6">
                         <input type="text"  placeholder="Your Name" value="" id="name"  name="name" class="input_text">
@@ -230,9 +228,6 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
         <script type="text/javascript" charset="utf-8" src="custom_js/phonegap-1.4.1.js"></script> 
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script  src="js/modernizr.custom.js"></script>
@@ -271,17 +266,12 @@
             });
         </script>
         <script>
-    
-
-$('#contact-submit').submit(function() {
+    $('#contact-submit').submit(function() {
     var pass = true;
-    //some validations
-
-    if(pass == false){
+        if(pass == false){
         return false;
     }
     $("#overlay, #PleaseWait").show();
-
     return true;
 });
 </script>
