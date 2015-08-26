@@ -1,10 +1,6 @@
 $(document).ready(function () {
     var appid = 'c0c7c76d30bd3dcaefc96f40275bdc0a';
-//    var appid = 'a1d0c6e83f027327d8461063f4ac58a6'; 
-//    var base_url = 'http://localhost/harish/wedding/index.php';
-    // var appid = 'd645920e395fedad7bbbed0eca3fe2e0';   
     var base_url = 'http://www.myweddingicon.com';
-
     var datetimecounter = '';
     $.ajax({
         url: base_url + '/appsget/weddingapp/' + appid,
@@ -14,15 +10,11 @@ $(document).ready(function () {
         success: function (wedresponseData) {
             var groomName = '', brideName = '', groomImg = '', brideImg = '', email = '', invitation = '', gname = '', bname = '', counter = '', inviatedate = '';
             $.each(wedresponseData, function (index, appdata) {
-//                 alert(appdata.groom);
-//              return false;
                 groomName += appdata.groom;
-
                 brideName += appdata.bride;
                 groomImg += appdata.groomimage;
                 brideImg += appdata.brideimage;
                 datetimecounter += appdata.counter;
-                // alert(counter);
                 gname += appdata.groom;
                 bname += appdata.bride;
                 invitation += appdata.invitation;
@@ -54,12 +46,9 @@ $(document).ready(function () {
         data: "",
         dataType: 'json',
         success: function (responseSocialData) {
-            // alert();
             var strHtmls = '';
             var iconname = '';
             $.each(responseSocialData, function (index, socialdata) {
-//                     alert( socialdata.url);
-//                     return false;
                 if (socialdata.social_icon == 'facebook') {
                     iconname = '<li><a href=' + socialdata.url + '  target="_blank"><i class="fa fa-facebook"></i></a></li>';
                 }
@@ -94,17 +83,13 @@ $(document).ready(function () {
                     iconname = '<li><a href=' + socialdata.url + '  target="_blank"><i class="fa fa-twitter"></i></a></li>';
                 }
 
-
-
                 strHtmls += '' + iconname + '';
-                //  alert(strHtml);    
+                 
             });
 
             $("#socailicon ul").html(strHtmls);
         }
     });
-
-
     $.ajax({
         url: base_url + '/appsget/weddingEventGet/' + appid,
         type: "GET",
@@ -121,9 +106,7 @@ $(document).ready(function () {
 
                 } else {
                     strHtml += '<div class="col-lg-1 centered"><img alt="" src="' + base_url + '/assets/img/flwr.png" class="img-responsive"></div> <div class="col-lg-6"><p style="font-weight:bold;">' + eventdata.name + '</p><p>' + eventdata.date + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.time + '</p><p>Venue :  ' + eventdata.street + '&nbsp;&nbsp&nbsp&nbsp' + eventdata.city + '</p></div>';
-                    // alert (eventRightConatiner);		
-
-
+                   
                 }
 
                 i++;
@@ -140,7 +123,6 @@ $(document).ready(function () {
         data: "",
         dataType: 'json',
         success: function (responseData) {
-            // alert();
             var strHtml = '';
             $.each(responseData, function (index, data) {
                 strHtml += '<li><a href="' + base_url + '/uploads/' + data.galleries + '"> <img src="' + base_url + '/uploads/' + data.galleries + '" alt=""></a></li>';
@@ -166,11 +148,6 @@ $(document).ready(function () {
             $("#contactajax ul").html(strHtml);
             var scripts = document.getElementsByTagName("script");
             var jsFolder = base_url + "/js/carouselengine/";
-//            for (var i = 0; i < scripts.length; i++)
-//            {
-//                if (scripts[i].src && scripts[i].src.match(/amazingcarousel\.js/i))
-//                    jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
-//            }
             if (typeof html5Lightbox === "undefined")
             {
                 html5Lightbox = jQuery(".html5lightbox").html5lightbox({
